@@ -279,9 +279,9 @@
         <item>Équipe technique</item>
     </string-array>
 
-    <string name="add_to_watchlist_two_lines">Ajouter à\nla Watchlist</string>
+    <string name="add_to_watchlist_two_lines">Ajouter à\nla watchlist</string>
     <string name="add_to_history_two_lines">Ajouter à\nl\'historique</string>
-    <string name="remove_from_watchlist_two_lines">Retirer de\nla Watchlist</string>
+    <string name="remove_from_watchlist_two_lines">Retirer de\nla watchlist</string>
     <string name="remove_from_history_list_2_lines">Retirer de\nl\'historique</string>
     <string name="not_aired_yet">Cette épisode n\'a\npas encore été diffusé</string>
     <string name="no_video_available_for_this_episode">Aucune vidéo disponible\npour cette épisode</string>
@@ -339,10 +339,10 @@
     </string-array>
 
     <string name="clear">Éffacer</string>
-    <string name="clear_movie_watchlist">Éffacer la Watchlist Films</string>
-    <string name="clear_tvshow_watchlist">Éffacer la Watchlist Séries</string>
-    <string name="clear_season_watchlist">Éffacer la Watchlist Saisons</string>
-    <string name="clear_episode_watchlist">Éffacer la Watchlist Épisodes</string>
+    <string name="clear_movie_watchlist">Éffacer la watchlist films</string>
+    <string name="clear_tvshow_watchlist">Éffacer la watchlist séries</string>
+    <string name="clear_season_watchlist">Éffacer la watchlist saisons</string>
+    <string name="clear_episode_watchlist">Éffacer la watchlist épisodes</string>
     <string name="no_movies_added_to_watchlist">Aucun film dans votre watchlist</string>
     <string name="no_tv_show_in_your_watchlist">Aucune série dans votre watchlist</string>
     <string name="no_season_in_your_watchlist">Aucune saison dans votre watchlist</string>
@@ -371,8 +371,8 @@
     <string name="episode_left_count">%1$d épisode restant à regarder</string>
     <string name="episodes_left_count">%1$d épisodes restants à regarder</string>
     <string name="completed_date">Terminé le %1$s</string>
-    <string name="clear_movie_history">Éffacer l\'historique Films</string>
-    <string name="clear_tvshow_history">Éffacer l\'historique Séries</string>
+    <string name="clear_movie_history">Éffacer l\'historique films</string>
+    <string name="clear_tvshow_history">Éffacer l\'historique wéries</string>
     <string name="no_movies_history">Aucun film dans votre historique</string>
     <string name="no_tv_show_history">Aucune série dans votre historique</string>
     <string name="no_season_history">Aucune saison dans votre historique</string>
@@ -394,7 +394,7 @@
 
     <!--  Progress Fragments  -->
     <string name="tv_show_progress">Progression en cours</string>
-    <string name="no_tv_show_in_your_progress">Aucune série dans en progression</string>
+    <string name="no_tv_show_in_your_progress">Aucune série en progression</string>
     <string name="episode_progress">Épisode : %1$d/%2$d</string>
     <string name="season_progress">Saison : %1$d/%2$d</string>
     <string name="set_show_as_completed">Visionnage terminé</string>
@@ -430,7 +430,7 @@
     <string name="number_of_blooper">%1$d Bêtisier</string>
     <string name="number_of_bloopers">%1$d Bêtisiers</string>
     <string name="number_of_behind_scene">%1$d Dans les coulisses</string>
-    <string name="number_of_opening_credits">%1$d Opening Credits</string>
+    <string name="number_of_opening_credits">%1$d Générique de début</string>
 
     <!--  Images Screen  -->
     <string name="backdrops">%1$d Fonds d\'écran</string>
@@ -511,20 +511,20 @@
     <string name="click_back_again">Appuyez une seconde fois pour quitter l\'application</string>
 
     <!--  BottomSheet Add List fragments  -->
-    <string name="add_to_watchlist">Ajouter à la Watchlist</string>
-    <string name="remove_from_watchlist">Retirer de la Watchlist</string>
+    <string name="add_to_watchlist">Ajouter à la watchlist</string>
+    <string name="remove_from_watchlist">Retirer de la watchlist</string>
     <string name="add_to_history_list">Ajouter à l\'historique</string>
     <string name="remove_from_history_list">Retirer de l\'historique</string>
-    <string name="add_show_to_watchlist">Ajouter à la Watchlist</string>
-    <string name="remove_show_from_watchlist">Retirer de la Watchlist</string>
+    <string name="add_show_to_watchlist">Ajouter à la watchlist</string>
+    <string name="remove_show_from_watchlist">Retirer de la watchlist</string>
     <string name="add_show_to_history">Ajouter à l\'historique</string>
     <string name="remove_show_from_history">Retirer de \'historique</string>
-    <string name="add_season_to_watchlist">Ajouter saison à la Watchlist</string>
-    <string name="remove_season_from_watchlist">Retirer saison de la Watchlist</string>
+    <string name="add_season_to_watchlist">Ajouter saison à la watchlist</string>
+    <string name="remove_season_from_watchlist">Retirer saison de la watchlist</string>
     <string name="add_season_to_history">Ajouter saison à l\'historique</string>
     <string name="remove_season_from_history">Retirer saison de \'historique</string>
-    <string name="add_episode_to_watchlist">Ajouter épisode à la Watchlist</string>
-    <string name="remove_episode_from_watchlist">Retirer épisode de la Watchlist</string>
+    <string name="add_episode_to_watchlist">Ajouter épisode à la watchlist</string>
+    <string name="remove_episode_from_watchlist">Retirer épisode de la watchlist</string>
     <string name="add_episode_to_history">Ajouter épisode à l\'historique</string>
     <string name="remove_episode_from_history">Retirer épisode de \'historique</string>
     <string name="add_to_collection">Ajouter à la collection</string>
@@ -569,7 +569,7 @@
     <!--  Error  -->
     <string name="error">Erreur</string>
     <string name="network_error">Erreur Réseaux</string>
-    <string name="retry">Réesayer</string>
+    <string name="retry">Réessayer</string>
     <string name="no_result">Aucun résultat</string>
     <string name="no_match_found">Je n\'ai rien trouvé</string>
     <string name="file_not_found">Fichier non trouvé</string>
