@@ -1,0 +1,608 @@
+<resources>
+    <string name="app_name">MMDb</string>
+    <string name="welcome">Bienvenue sur MMDb</string>
+
+    <!--  Navigation Menu  -->
+    <string name="home_tab">Accueil</string>
+    <string name="search_tab">Rechercher</string>
+    <string name="movies_tab">Films</string>
+    <string name="tv_show_tab">Séries</string>
+    <string name="dashboard_tab">Dashboard</string>
+
+    <!--  Home Fragment  -->
+    <string name="trending_movies">Tendances Films</string>
+    <string name="trending_tv_shows">Tendances Séries</string>
+    <string name="trending_people">Tendances Célébrités</string>
+    <string name="my_movies_watchlist">Ma Watchlist Films</string>
+    <string name="my_tv_show_watchlist">Ma Watchlist Series</string>
+    <string name="this_week">semaine</string>
+    <string name="today">Aujourd\'hui</string>
+    <string name="this_day">du jour</string>
+    <string name="upcoming_episodes">Épisodes à venir</string>
+    <string name="days_ago">Mis à jour il y a %1$d jours</string>
+    <string name="hours_ago">Mis à jour il y a %1$d heures</string>
+    <string name="minutes_ago">Mis à jour il y a %1$d minutes</string>
+    <string name="seconds_ago">Mis à jour il y a %1$d secondes</string>
+    <string name="just_now">Mis à jour à l\'instant</string>
+    <string name="tomorrow">Demain</string>
+    <string name="days_left">dans %1$d jours</string>
+    <string name="airing_on">Prochaine diffusion le %1$s</string>
+    <string name="continue_watching">Continuer à regarder</string>
+    <string name="watched">Vu</string>
+    <string name="default_language_warning">Votre langue installée par défaut est le %1$s. Cette langue n\'est pas encore totalement supportée par MMDb.\n\nVous pouvez changer la langue de l\'application à tout moment dans les paramètres.</string>
+
+    <!--  Onboarding Screens  -->
+    <string name="onboarding_movie_title">Sélectionnez des films à voir</string>
+    <string name="onboarding_tv_title">Sélectionnez des séries déjà vues</string>
+    <string name="continue_text">Continuer</string>
+    <string name="finish_text">Terminer</string>
+    <string name="synchronizing_data">Synchronisation des données…</string>
+
+    <!--  Login Screen  -->
+    <string name="login">Se connecter</string>
+    <string name="email">E-mail</string>
+    <string name="password">Mot de passe</string>
+    <string name="forgot_password">Mot de passe oublié ?</string>
+    <string name="login_with_google">Se connecter avec Google</string>
+    <string name="please_wait">Veuillez patienter…</string>
+    <string name="login_successful">Connecté avec succès</string>
+    <string name="password_reset">E-mail de réinitialisation envoyé à\n%1$s</string>
+    <string name="already_account">J\'ai déjà un compte</string>
+    <string name="no_account">Je n\'ai pas encore de compte</string>
+    <string name="welcome_back">Bon Retour</string>
+    <string name="loading_data">Chargement des données\u00A0…</string>
+    <string name="data_sync_fail">La synchro des données à échouée.</string>
+    <string name="maybe_later">Peut-être plus tard,</string>
+    <string name="skip">\u00A0\u00A0Passer</string>
+    <string name="show_password">Afficher mot de passe</string>
+    <string name="hide_password">Cacher mot de passe</string>
+    <string name="reset_password">Réinitialiser le mot de passe</string>
+    <string name="reset_password_text">Vouz recevrez un e-mail afin de réinitialiser votre mot de passe.</string>
+
+    <!--  Register Screens  -->
+    <string name="register">S\'inscrire</string>
+    <string name="username">Identifiant</string>
+    <string name="welcome_mmdb">Bienvenue sur MMDb</string>
+    <string name="create_account">Créer un compte</string>
+    <string name="username_length">Votre identifiant doit comporter au moins 4 caractères.</string>
+    <string name="password_length">Votre mot de passe doit comporter au moins 6 caractères.</string>
+    <string name="signup_with_google">S\'inscrire avec Google</string>
+    <string name="signup_successful">Inscription réussie</string>
+    <string name="register_warning_1">En continuant vous acceptez nos\n</string>
+    <string name="register_warning_2">\u00A0et\u00A0</string>
+    <string name="or">ou</string>
+
+    <!--  Delete Account Screen  -->
+    <string name="delete_account_txt_1">Supprimer votre compte laissera vos données sur le téléphone, et supprimera uniquement les données sur nos serveurs</string>
+    <string name="delete_account_txt_2">Aussi supprimer les données sur mon téléphone</string>
+    <string name="delete_account_txt_3">Veuillez vous connecter afin de confirmer le compte à suppprimer de MMDb</string>
+    <string name="delete_account_txt_4">Cliquez ici si vous avez créer un compte via Google</string>
+    <string name="delete_success">Compte supprimé avec succée</string>
+    <string name="delete_google_btn">Supprimer mon compte MMDb</string>
+
+    <!--  Profile Screen -->
+    <string name="my_profile">Mon Profil</string>
+    <string name="new_to_mmdb">Nouveau sur MMDb ?</string>
+    <string name="already_a_member">Déjà membre ?</string>
+    <string name="sign_up">S\'inscrire</string>
+    <string name="sign_in">Se connecter</string>
+    <string name="sign_out">Se déconnecter</string>
+    <string name="logged_in">Vous êtes connecté</string>
+    <string name="logged_out">Vous êtes déconnecté</string>
+    <string name="anonymous_user">Anonyme</string>
+    <string name="settings">Paramètres</string>
+    <string name="about">À propos</string>
+    <string name="follow_on">Suivez MMDb sur</string>
+    <string name="connect_with_tmdb">Se connecter avec TMDB\nDisponibilité à venir</string>
+    <string name="connect_with_trakt">Se connecter avec TRAKT\nDisponibilité à venir</string>
+
+    <!--  TMDB Dialog -->
+    <string name="tmdb_dialog_title">Se connecter avec TMDB</string>
+    <string name="tmdb_dialog_text">Cette fonctionnalité n\'est pas encore disponible. Restez à l\'écoute pour de futures mises à jour</string>
+
+    <!--  TRAKT Dialog -->
+    <string name="trakt_dialog_title">Se connecter avec TRAKT</string>
+    <string name="trakt_dialog_text">Cette fonctionnalité n\'est pas encore disponible. Restez à l\'écoute pour de futures mises à jour</string>
+
+    <!--  Settings Screen -->
+    <string name="app_region">Région</string>
+    <string name="app_language">Langue</string>
+    <string name="layout_type">Type d\'affichage</string>
+    <string name="linear">Linéaire</string>
+    <string name="grid">Grille</string>
+    <string name="delete_account">Supprimer le compte</string>
+
+    <!--  Set Region Screen -->
+    <string name="set_region">Définir la région</string>
+    <string name="hint_search_region">Chercher une région</string>
+
+    <!--  Set Language Screen -->
+    <string name="set_language">Définir la langue</string>
+    <string name="hint_search_language">Chercher une langue</string>
+
+    <!--  About Screen  -->
+    <string name="app_version">Version %1$s</string>
+    <string name="dev_info">Développé par Alexandre Girard</string>
+    <string name="app_info">MMDb utilise les APIs de TMDB.\n Cette application n\'est pas une application officielle de TMDB.</string>
+    <string name="privacy_policy">Politique de confidentialité</string>
+    <string name="terms_of_use">Conditions d\'utilisation</string>
+    <string name="licenses">Licences</string>
+    <string name="open_source_licenses">Licences Open source</string>
+
+    <!--  Discover Movies Fragment  -->
+    <string-array name="movie_list">
+        <item>Découvrir</item>
+        <item>Populaire</item>
+        <item>Du moment</item>
+        <item>À venir</item>
+        <item>Les Mieux Notés</item>
+    </string-array>
+
+    <string name="discover_movies_by">Découvrir des films par</string>
+    <string name="genres">Genres</string>
+    <string name="certifications">Certifications</string>
+    <string name="streaming_platforms">Platformes\nde streaming</string>
+    <string name="original_languages">Langues\nd\'origine</string>
+    <string name="go_to">Aller à</string>
+    <string name="popular_movies">Films Populaires</string>
+    <string name="now_playing_movies">Films du moment</string>
+    <string name="upcoming_movies">Films à venir</string>
+    <string name="top_rated_movies">Films les mieux notés</string>
+    <string name="genre_list_title">Liste des genres</string>
+    <string name="certification_list_title">Liste des certifications</string>
+    <string name="watch_provider_list_title">Liste des plateformes de streaming</string>
+    <string name="origin_language_list_title">Listes des langues d\'origines</string>
+
+    <!--  Discover TV Shows Fragment  -->
+    <string-array name="tvshow_list">
+        <item>Découvrir</item>
+        <item>Populaire</item>
+        <item>Diffusées Aujourd\'hui</item>
+        <item>Cette Semaine</item>
+        <item>Les Mieux Notées</item>
+    </string-array>
+
+    <string name="types">Catégories</string>
+    <string name="discover_tvshow_by">Découvrir des séries par</string>
+    <string name="popular_tvshow">Séries Populaires</string>
+    <string name="airing_today_tvshow">Séries diffusées aujourd\'hui</string>
+    <string name="this_week_tvshow">Séries diffusées cette semaine</string>
+    <string name="top_rated_tvshow">Séries les mieux notées</string>
+    <string name="certification_not_available">Aucune certifications disponible pour votre région.\nLes certifications américaines sont affichées par défaut.</string>
+    <string name="type_list_title">Liste des catégories</string>
+
+    <!--  TV Show Types list Fragment  -->
+    <string name="documentary">Documentaire</string>
+    <string name="news_show">Actualité</string>
+    <string name="mini_series">Mini-Série</string>
+    <string name="reality_show">Télé-Réalité</string>
+    <string name="scripted">Scénarisée</string>
+    <string name="talk_show">Émission-Débat</string>
+    <string name="video">Vidéo</string>
+
+    <!--  Search Fragment  -->
+    <string name="search_hint">Chercher…</string>
+    <string name="movie">Film</string>
+    <string name="tv_show">Série TV</string>
+    <string name="people">Personne</string>
+    <string name="search_for_movies">Rechercher des films</string>
+    <string name="search_for_tvshows">Rechercher des séries TV</string>
+    <string name="search_for_people">Rechercher des personnes</string>
+    <string name="your_search_history">Mon historique de recherche</string>
+    <string name="clear_history">Éffacer l\'historique</string>
+    <string name="no_movies_found">Aucun film trouvé</string>
+    <string name="no_tvshow_found">Aucune série TV trouvée</string>
+    <string name="no_person_found">Aucune personne trouvée</string>
+    <string name="search_no_result">Désolé\n Je n\'ai aucun résultat pour votre recherche</string>
+
+    <!--  Movie Details Fragment  -->
+    <string name="cast">Distribution des rôles</string>
+    <string name="writer">Écrivain</string>
+    <string name="producer">Producteur</string>
+    <string name="director">Directeur</string>
+    <string name="synopsis">Synopsis</string>
+    <string name="no_synopsis">Pas de synopsis disponible</string>
+    <string name="see_all">Tout voir</string>
+    <string name="find_where_to_watch">Trouver où regarder</string>
+    <string name="unknown">Inconnu</string>
+    <string name="recommendations">Recommandations</string>
+    <string name="nbr_recommended_movie">%1$d film recommandé</string>
+    <string name="nbr_recommended_movies">%1$d films recommandés</string>
+    <string name="movie_details">Informations</string>
+    <string name="movie_is_in_watchlist">Ce film est dans votre watchlist</string>
+    <string name="show_is_in_watchlist">Cette série est dans votre watchlist</string>
+    <string name="read_more">voir plus</string>
+    <string name="read_less">voir moins</string>
+    <string name="collection">Collection</string>
+    <string name="reviews">Critiques</string>
+    <string name="images">Images</string>
+    <string name="videos">Vidéos</string>
+    <string name="status">Statut</string>
+    <string name="release_date">Date de sortie</string>
+    <string name="original_language">Langue d\'origine</string>
+    <string name="original_title">Titre d\'origine</string>
+    <string name="certification">Certification</string>
+    <string name="budget">Budget</string>
+    <string name="revenue">Recettes</string>
+    <string name="production_company">Société de production</string>
+    <string name="production_country">Pays de production</string>
+    <string name="socials">Réseaux</string>
+    <string name="no_trailer_available">Aucune bande-annonce disponible</string>
+    <string name="add_to_list">Ajouter à une liste</string>
+
+    <!--  Cast & Crew Fragment  -->
+    <string name="number_person">%1$d Personne</string>
+    <string name="number_persons">%1$d Personnes</string>
+    <string name="number_cast">%1$d Rôles</string>
+    <string name="number_crew">%1$d Techniciens</string>
+
+    <!--  TV Show Details Fragment  -->
+    <string name="last_episode">Épisode précédent</string>
+    <string name="next_episode">Prochain épisode</string>
+    <string name="nbr_of_eps">Nombre d\'épisodes : </string>
+    <string name="nbr_of_seasons">Nombre de saisons : </string>
+    <string name="first_air_date">Première date de diffusion</string>
+    <string name="last_air_date">Dernière date de diffusion</string>
+    <string name="date_unknown">Date de diffusion inconnue</string>
+    <string name="runtime_unknown">Durée inconnue</string>
+    <string name="created_by">Créée par</string>
+    <string name="tvshow_details">Informations</string>
+    <string name="format_season_episode">S%1$sE%2$s</string>
+    <string name="episode_runtime">%1$d min</string>
+    <string name="nbr_recommended_tv_show">%1$d série recommandée</string>
+    <string name="nbr_recommended_tv_shows">%1$d séries recommandées</string>
+    <string name="runtime">Durée</string>
+    <string name="episode_num">Épisode %1$s</string>
+    <string name="production_networks">Diffuseur télévisé</string>
+    <string name="seasons">Saisons</string>
+    <string name="season_number">Saison %1$d</string>
+    <string name="special_season">Épisodes Spéciaux</string>
+    <string name="in_production">Série en production</string>
+    <string name="returning_series">Série renouvelée</string>
+    <string name="ended_series">Série terminée</string>
+
+    <!--  Seasons List Fragment  -->
+    <string name="sort_order">Trier l\'ordre</string>
+    <string name="sort_by_ascending_order">Trier par ordre croissant</string>
+    <string name="sort_by_descending_order">Trier par ordre décroissant</string>
+    <string name="your_progression">Votre progression :</string>
+
+    <!--  Episodes List Fragment  -->
+    <string name="no_overview_available_for_this_season">\nAucun aperçu disponible pour cette saison\n</string>
+
+    <!--  Episode Details Fragment  -->
+    <string-array name="tvshow_episode">
+        <item>Informations</item>
+        <item>Images</item>
+        <item>Vidéos</item>
+        <item>Rôles</item>
+        <item>Équipe technique</item>
+    </string-array>
+
+    <string name="add_to_watchlist_two_lines">Ajouter à\nla Watchlist</string>
+    <string name="add_to_history_two_lines">Ajouter à\nl\'historique</string>
+    <string name="remove_from_watchlist_two_lines">Retirer de\nla Watchlist</string>
+    <string name="remove_from_history_list_2_lines">Retirer de\nl\'historique</string>
+    <string name="not_aired_yet">Cette épisode n\'a\npas encore été diffusé</string>
+    <string name="no_video_available_for_this_episode">Aucune vidéo disponible\npour cette épisode</string>
+    <string name="no_cast_nor_guest_stars_available_for_this_episode">Aucune disponibilité\npour cette épisode</string>
+    <string name="no_crew_available_for_this_episode">Aucune disponibilité\npour cette épisode</string>
+
+    <!--  People Fragment  -->
+    <string name="no_biography">Aucune biographie disponible pour %1$s.</string>
+    <string name="biography">Biographie</string>
+    <string name="known_for">Célèbre pour</string>
+    <string name="gender">Genre</string>
+    <string name="birthday">Date de naissance</string>
+    <string name="day_of_death">Date de décès</string>
+    <string name="set_birthday">%1$s (%2$d ans)</string>
+    <string name="set_deathday">%1$s (%2$d ans)</string>
+    <string name="place_of_birth">Lieu de naissance</string>
+    <string name="career">Carrière</string>
+    <string name="all">Tous</string>
+    <string name="pull_down_movie">Film</string>
+    <string name="pull_down_tv">TV</string>
+    <string name="as_role">incarnant %1$s</string>
+    <string name="male">Homme</string>
+    <string name="female">Femme</string>
+
+    <!--  Dashboard Fragment  -->
+    <string name="watchlist">Watchlist</string>
+    <string name="history">Historique</string>
+    <string name="alarms">Alarmes</string>
+    <string name="my_lists">Mes Listes</string>
+    <string name="progress">Progression\nSérie TV</string>
+    <string name="number_of_movie">%1$d film</string>
+    <string name="number_of_movies">%1$d films</string>
+    <string name="number_of_tv_show">%1$d série</string>
+    <string name="number_of_tv_shows">%1$d séries</string>
+    <string name="number_of_season">%1$d saison</string>
+    <string name="number_of_seasons">%1$d saisons</string>
+    <string name="number_of_episode">%1$d épisode</string>
+    <string name="number_of_episodes">%1$d épisodes</string>
+    <string name="not_yet_available">pas encore\ndisponible</string>
+
+    <!--  Trending Fragments  -->
+    <string-array name="time_window_list">
+        <item>Aujourd\'hui</item>
+        <item>Cette semaine</item>
+    </string-array>
+
+    <string name="known_for_job">Célèbre pour %1$s</string>
+
+    <!--  Watchlist Fragments  -->
+    <string-array name="watchlist_tab_list">
+        <item>Film</item>
+        <item>Série TV</item>
+        <item>Saison</item>
+        <item>Épisode</item>
+    </string-array>
+
+    <string name="clear">Éffacer</string>
+    <string name="clear_movie_watchlist">Éffacer la Watchlist Films</string>
+    <string name="clear_tvshow_watchlist">Éffacer la Watchlist Séries</string>
+    <string name="clear_season_watchlist">Éffacer la Watchlist Saisons</string>
+    <string name="clear_episode_watchlist">Éffacer la Watchlist Épisodes</string>
+    <string name="no_movies_added_to_watchlist">Aucun film dans votre watchlist</string>
+    <string name="no_tv_show_in_your_watchlist">Aucune série dans votre watchlist</string>
+    <string name="no_season_in_your_watchlist">Aucune saison dans votre watchlist</string>
+    <string name="no_episode_in_your_watchlist">Aucun épisode dans votre watchlist</string>
+    <string name="add_a_movie">Ajouter un film</string>
+    <string name="add_a_tv_show">Ajouter une série</string>
+    <string name="add_a_season">Ajouter une saison</string>
+    <string name="add_an_episode">Ajouter un épisode</string>
+    <string name="watchlist_season_count">Saisons : %1$d</string>
+    <string name="watchlist_season_count_singular">Saison : %1$d</string>
+    <string name="watchlist_episode_count">Épisodes : %1$d</string>
+    <string name="watchlist_episode_count_singular">Épisode : %1$d</string>
+    <string name="set_watchlist_added_date">Ajouté à la watchlist le %1$s</string>
+
+    <!--  History Fragments  -->
+    <string-array name="history_tab_list">
+        <item>Film</item>
+        <item>Série TV</item>
+        <item>Saison</item>
+        <item>Épisode</item>
+    </string-array>
+
+    <string name="history_title">Historique</string>
+    <string name="number_episode">%1$d épisode</string>
+    <string name="number_episodes">%1$d épisodes</string>
+    <string name="episode_left_count">%1$d épisode restant à regarder</string>
+    <string name="episodes_left_count">%1$d épisodes restants à regarder</string>
+    <string name="completed_date">Terminé le %1$s</string>
+    <string name="clear_movie_history">Éffacer l\'historique Films</string>
+    <string name="clear_tvshow_history">Éffacer l\'historique Séries</string>
+    <string name="no_movies_history">Aucun film dans votre historique</string>
+    <string name="no_tv_show_history">Aucune série dans votre historique</string>
+    <string name="no_season_history">Aucune saison dans votre historique</string>
+    <string name="no_episode_history">Aucun épisode dans votre historique</string>
+    <string name="history_episode_watched_date">Visionné le %1$s</string>
+    <string name="set_history_added_date">Ajouté à l\'historique le %1$s</string>
+
+    <!--  Collection Fragments  -->
+    <string name="collection_title">Collection</string>
+    <string name="collection_warning">Les collections sont en cours de développement. Restez à l\'écoute pour de prochaines mises à jour</string>
+
+    <!--  Alarm Fragments  -->
+    <string name="alarm_title">Alarmes</string>
+    <string name="alarm_warning">Les alarmes sont en cours de développement. Restez à l\'écoute pour de prochaines mises à jour</string>
+
+    <!--  My lists Fragments  -->
+    <string name="my_list_title">Mes Listes</string>
+    <string name="my_lists_warning">Les listes personnelles sont en cours de développement. Restez à l\'écoute pour de prochaines mises à jour</string>
+
+    <!--  Progress Fragments  -->
+    <string name="tv_show_progress">Progression en cours</string>
+    <string name="no_tv_show_in_your_progress">Aucune série dans en progression</string>
+    <string name="episode_progress">Épisode : %1$d/%2$d</string>
+    <string name="season_progress">Saison : %1$d/%2$d</string>
+    <string name="set_show_as_completed">Visionnage terminé</string>
+    <string name="progress_episodes">%1$d/%2$d épisodes</string>
+    <string name="set_season_as_completed">Terminé</string>
+    <string name="next_episode_btn">Suivant</string>
+    <string name="next">Suivant :</string>
+    <string name="progress_show">Progression %1$s</string>
+    <string name="progress_season">Progression Saison %1$d</string>
+    <string name="all_seasons_watched">Vu toutes les saisons</string>
+    <string name="all_episodes_watched">Vu tous les épisodes</string>
+    <string name="next_episode_air_date">Prévue le %1$s</string>
+    <string name="set_all_to_watched">Visionnage terminé</string>
+
+    <!--  Videos Screen  -->
+    <string name="number_of_video">%1$d vidéo</string>
+    <string name="number_of_videos">%1$d vidéos</string>
+    <string name="trailer">Bande-annonce</string>
+    <string name="teaser">Amorce</string>
+    <string name="clip">Extrait</string>
+    <string name="featurette">Bonus</string>
+    <string name="blooper">Bêtisier</string>
+    <string name="behind_scene">Dans les coulisses</string>
+    <string name="opening_credits">Générique de début</string>
+    <string name="number_of_trailer">%1$d Bande-annonce</string>
+    <string name="number_of_trailers">%1$d Bandes-annonces</string>
+    <string name="number_of_teaser">%1$d Amorce</string>
+    <string name="number_of_teasers">%1$d Amorces</string>
+    <string name="number_of_clip">%1$d Extrait</string>
+    <string name="number_of_clips">%1$d Extraits</string>
+    <string name="number_of_featurette">%1$d Bonus</string>
+    <string name="number_of_featurettes">%1$d Bonus</string>
+    <string name="number_of_blooper">%1$d Bêtisier</string>
+    <string name="number_of_bloopers">%1$d Bêtisiers</string>
+    <string name="number_of_behind_scene">%1$d Dans les coulisses</string>
+    <string name="number_of_opening_credits">%1$d Opening Credits</string>
+
+    <!--  Images Screen  -->
+    <string name="backdrops">%1$d Fonds d\'écran</string>
+    <string name="posters">%1$d Affiches</string>
+    <string name="no_poster_available">Aucune affiche disponible</string>
+    <string name="no_backdrop_available">Aucun fond d\'écran disponible</string>
+
+    <!--  Single Image Screen  -->
+    <string name="share">Partager</string>
+    <string name="download">Télécharger</string>
+    <string name="share_picture">Partager l\'image</string>
+    <string name="picture_downloaded">Image téléchargée</string>
+    <string name="picture_already_downloaded">Image déjà téléchargée</string>
+
+    <!--  Reviews Screens  -->
+    <string name="review">Critique</string>
+    <string name="review_list_title">%1$d Critique</string>
+    <string name="reviews_list_title">%1$d Critiques</string>
+    <string name="sort_by_date">Trier par date</string>
+    <string name="sort_by_rating">Trier par note</string>
+    <string name="sort_reviews">Trier les critiques</string>
+    <string name="written_by">Écrit par %1$s</string>
+
+    <!--  Release Dates Screen  -->
+    <string name="nbr_release_country">%1$d pays</string>
+    <string name="nbr_release_countries">%1$d pays</string>
+    <string name="tab_layout_date">Date</string>
+    <string name="tab_layout_type">Type</string>
+    <string name="tab_layout_note">Commentaire</string>
+
+    <string name="type_premiere">Première diffusion</string>
+    <string name="type_theatrical">Au cinéma</string>
+    <string name="type_theatrical_limited">Au cinéma (limité)</string>
+    <string name="type_digital">En copie numérique</string>
+    <string name="type_physical">En copie physique</string>
+    <string name="type_tv">À la télévision</string>
+    <string name="type_unknown">Inconnu</string>
+
+    <!--  WebView Fragment  -->
+    <string name="default_browser">Navigateur Web</string>
+    <string name="open_default_browser">Ouvrir dans un navigateur web</string>
+    <string name="back_to_review">Retour à la critique</string>
+
+    <!--  SnackBar Messages  -->
+    <string name="undo">Annuler</string>
+    <string name="see_list">Voir liste</string>
+    <string name="movie_added_to_watchlist">Film ajouté à la watchlist</string>
+    <string name="show_added_to_watchlist">Série ajoutée à la watchlist</string>
+    <string name="season_added_to_watchlist">Saison ajoutée à la watchlist</string>
+    <string name="episode_added_to_watchlist">Épisode ajouté à la watchlist</string>
+    <string name="movie_removed_from_watchlist">Film retiré de la watchlist</string>
+    <string name="show_removed_from_watchlist">Série retirée de la watchlist</string>
+    <string name="season_removed_from_watchlist">Saison retirée de la watchlist</string>
+    <string name="episode_removed_from_watchlist">Épisode retiré de la watchlist</string>
+    <string name="movie_cleared_from_watchlist">Watchlist des films effacée</string>
+    <string name="show_cleared_from_watchlist">Watchlist des séries effacée</string>
+    <string name="season_cleared_from_watchlist">Watchlist des saisons effacée</string>
+    <string name="episode_cleared_from_watchlist">Watchlist des épisode effacée</string>
+    <string name="movie_added_to_history_list">Film ajouté à l\'historique</string>
+    <string name="show_added_to_history_list">Série ajoutée à l\'historique</string>
+    <string name="season_added_to_history_list">Saison ajoutée à l\'historique</string>
+    <string name="episode_added_to_history_list">Épisode ajouté à l\'historique</string>
+    <string name="movie_removed_from_history_list">Film retiré de l\'historique</string>
+    <string name="show_removed_from_history_list">Série retirée de l\'historique</string>
+    <string name="season_removed_from_history_list">Saison retirée de l\'historique</string>
+    <string name="episode_removed_from_history_list">Épisode retiré de l\'historique</string>
+    <string name="movie_cleared_from_history_list">Historique des films effacé</string>
+    <string name="show_cleared_from_history_list">Historique des séries effacé</string>
+    <string name="search_history_cleared">Historique des recherches effacé</string>
+    <string name="language_set_to">L\'application est maintenant en %1$s</string>
+    <string name="region_set_to">Région sélectionnée : %1$s</string>
+    <string name="same_language">MMDb est déjà en %1$s</string>
+    <string name="same_region">Cette région est déjà sélectionnée</string>
+    <string name="set_to_linear">Affichage linéaire sélectionné</string>
+    <string name="set_to_grid">Affichage grille sélectionné</string>
+
+    <!--  Toast Messages  -->
+    <string name="click_back_again">Appuyez une seconde fois pour quitter l\'application</string>
+
+    <!--  BottomSheet Add List fragments  -->
+    <string name="add_to_watchlist">Ajouter à la Watchlist</string>
+    <string name="remove_from_watchlist">Retirer de la Watchlist</string>
+    <string name="add_to_history_list">Ajouter à l\'historique</string>
+    <string name="remove_from_history_list">Retirer de l\'historique</string>
+    <string name="add_show_to_watchlist">Ajouter à la Watchlist</string>
+    <string name="remove_show_from_watchlist">Retirer de la Watchlist</string>
+    <string name="add_show_to_history">Ajouter à l\'historique</string>
+    <string name="remove_show_from_history">Retirer de \'historique</string>
+    <string name="add_season_to_watchlist">Ajouter saison à la Watchlist</string>
+    <string name="remove_season_from_watchlist">Retirer saison de la Watchlist</string>
+    <string name="add_season_to_history">Ajouter saison à l\'historique</string>
+    <string name="remove_season_from_history">Retirer saison de \'historique</string>
+    <string name="add_episode_to_watchlist">Ajouter épisode à la Watchlist</string>
+    <string name="remove_episode_from_watchlist">Retirer épisode de la Watchlist</string>
+    <string name="add_episode_to_history">Ajouter épisode à l\'historique</string>
+    <string name="remove_episode_from_history">Retirer épisode de \'historique</string>
+    <string name="add_to_collection">Ajouter à la collection</string>
+    <string name="add_to_a_list">Ajouter à une liste</string>
+    <string name="added_to_watchlist_date">Ajouté à la watchlist le %1$s</string>
+    <string name="added_to_history_date">Ajouté à l\'historique le %1$s</string>
+    <string name="all_aired_episodes_will_be_added">Tous les épisode déjà diffusés seront ajoutés</string>
+    <string name="has_not_aired_yet">Cet épisode n\'a pas encore été diffusé</string>
+    <string name="add_an_alarm">Ajouter une alarme</string>
+    <string name="remove_an_alarm">Retirer une alarme</string>
+
+    <!--  BottomSheet Sort & Filter fragments  -->
+    <string name="ascending">Croissant</string>
+    <string name="descending">Décroissant</string>
+    <string name="from">Du</string>
+    <string name="until">Au</string>
+    <string name="sort_title">Titre</string>
+    <string name="filter_by">Filtrer Par</string>
+    <string name="sort_by">Trier Par</string>
+    <string name="release_year">Année de sortie</string>
+    <string name="first_aired_year">Première année de diffusion</string>
+    <string name="sort_popularity">Popularité</string>
+    <string name="sort_release_date">Date de sortie</string>
+    <string name="sort_vote_average">Moyenne des notes</string>
+    <string name="sort_vote_count">Nombre de notes</string>
+    <string name="minimum_ratings_count">Nombre minimum de notes</string>
+    <string name="minimum_average_vote">Moyenne minimum des notes</string>
+    <string name="reset">Éffacer</string>
+    <string name="done">Valider</string>
+    <string name="filter">Filtrer</string>
+    <string name="sort">Trier</string>
+
+    <!--  BottomSheet available Watch platform fragments  -->
+    <string name="stream">Streamer</string>
+    <string name="buy">Acheter</string>
+    <string name="rent">Louer</string>
+
+    <!--  Ratings  -->
+    <string name="no_release_date">Aucune date de sortie disponible</string>
+    <string name="not_rated">NR</string>
+
+    <!--  Error  -->
+    <string name="error">Erreur</string>
+    <string name="network_error">Erreur Réseaux</string>
+    <string name="retry">Réesayer</string>
+    <string name="no_result">Aucun résultat</string>
+    <string name="no_match_found">Je n\'ai rien trouvé</string>
+    <string name="file_not_found">Fichier non trouvé</string>
+    <string name="no_internet">Pas de connection internet</string>
+    <string name="error_downloading_picture">Erreur pendant le téléchargement</string>
+    <string name="no_permission">Permissions non accordées</string>
+    <string name="fail_share_picture">Erreur lors du partage d\'image</string>
+
+    <!--  Alert Dialog  -->
+    <string name="ok">Ok</string>
+    <string name="cancel">Annuler</string>
+    <string name="send">Envoyer</string>
+
+    <!--  Content Description Strings  -->
+    <string name="facebook_logo">Logo Facebook</string>
+    <string name="instagram_logo">Logo Instagram</string>
+    <string name="twitter_logo">Logo Twitter</string>
+    <string name="web_browser_logo">Logo Navigateur Web</string>
+    <string name="person_picture">Liste de photos</string>
+    <string name="google_logo">Logo Google</string>
+    <string name="go_back">Retour en arrière</string>
+
+    <!--  Miscellaneous Strings  -->
+    <string name="none"> - </string>
+    <string name="rate">%.1f</string>
+    <string name="separator">" | "</string>
+    <string name="time">%1dh%1dm</string>
+    <string name="percentage">%1$d \%%</string>
+    <string name="time_hour_only">%1dh</string>
+    <string name="time_minutes_only">%1dm</string>
+    <string name="ratings_number">%1s</string>
+    <string name="rate_to_rate">%1$s - %2$s</string>
+    <string name="date_and_status">%1$s | %2$s</string>
+    <string name="lorem_ipsum">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+
+</resources>
