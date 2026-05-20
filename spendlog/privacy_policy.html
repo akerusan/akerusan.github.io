@@ -14,17 +14,18 @@
 </head>
 <body>
     <h1>Privacy Policy</h1>
-    <p class="date">Last updated: February 22, 2026</p>
+    <p class="date">Last updated: May 20, 2026</p>
 
     <p>SpendLog ("we", "our", or "the app") is committed to protecting your privacy. This Privacy Policy explains how we handle your information when you use our mobile application.</p>
 
     <h2>1. Information We Collect</h2>
-    <p><strong>Data stored locally on your device:</strong></p>
+    <p><strong>Data stored locally on your device (by default):</strong></p>
     <ul>
-        <li>Expense entries (amounts, categories, dates, notes)</li>
-        <li>App preferences (currency, theme, daily limit settings)</li>
+        <li>Expense entries (amounts, categories, dates, notes, optional receipt photos)</li>
+        <li>App preferences (currency, theme, daily limit, language, notification settings)</li>
+        <li>Account and category configuration</li>
     </ul>
-    <p>This data is stored only on your device and is not transmitted to our servers.</p>
+    <p>By default this data is stored only on your device and is not transmitted to our servers. Some optional features described below sync data to Google or Firebase services <em>only when you explicitly enable them</em>.</p>
 
     <p><strong>Analytics and crash reporting:</strong></p>
     <ul>
@@ -36,6 +37,7 @@
     <ul>
         <li>The free version of SpendLog displays ads served by Google AdMob. AdMob may collect device identifiers and usage data to serve relevant ads. Please refer to <a href="https://policies.google.com/privacy">Google's Privacy Policy</a> for details.</li>
         <li>Premium users do not see ads and no ad-related data is collected.</li>
+        <li>Users in the European Economic Area, the United Kingdom, and Switzerland are shown a consent prompt (Google's User Messaging Platform) on first launch and can change their ad personalization choices at any time from <em>Settings &rarr; Privacy options</em>.</li>
     </ul>
 
     <h2>2. How We Use Your Information</h2>
@@ -43,30 +45,72 @@
         <li>To provide and improve the expense tracking functionality</li>
         <li>To analyze app usage and fix crashes</li>
         <li>To display advertisements (free version only)</li>
+        <li>To enable optional cloud features that you explicitly turn on (Couple Mode, Google Drive backup)</li>
     </ul>
 
     <h2>3. Data Storage and Security</h2>
-    <p>All expense data is stored locally on your device using an encrypted database. We do not have access to your personal expense data. If you uninstall the app, all locally stored data will be deleted.</p>
+    <p>By default, all expense data is stored locally on your device in an app-private database. We do not have access to that data. If you uninstall the app, locally stored data is deleted.</p>
+    <p>If you enable an optional cloud feature (see sections 4 and 5), the data described in that section is transmitted to and stored by the corresponding Google or Firebase service under your account.</p>
 
-    <h2>4. Data Export</h2>
-    <p>You can export your expense data as a CSV file at any time through the Settings menu. The exported file is saved to a location you choose on your device.</p>
+    <h2>4. Optional Cloud Features</h2>
 
-    <h2>5. Third-Party Services</h2>
-    <p>We use the following third-party services:</p>
+    <p><strong>Google Drive Backup (optional, opt-in):</strong></p>
     <ul>
-        <li><strong>Firebase Analytics</strong> - Usage analytics</li>
-        <li><strong>Firebase Crashlytics</strong> - Crash reporting</li>
-        <li><strong>Google AdMob</strong> - Advertising (free version)</li>
-        <li><strong>Google Play Billing</strong> - In-app purchases</li>
+        <li>If you sign in with your Google account and enable Drive backup in Settings, the app periodically uploads an encrypted backup of your expense database to your own Google Drive.</li>
+        <li>Backups are stored in the app's private <code>appDataFolder</code> in your Drive. We cannot read or list the files in any other Drive folder — the app only has access to files it created.</li>
+        <li>You can disable backup, sign out, or delete existing backup files at any time from Settings.</li>
     </ul>
 
-    <h2>6. Children's Privacy</h2>
+    <p><strong>Couple Mode (optional, opt-in):</strong></p>
+    <ul>
+        <li>Couple Mode lets two users pair their accounts to share specific expenses they each mark as "shared." Pairing requires both users to sign in with Google and exchange a one-time 6-digit code.</li>
+        <li>While paired, expenses you mark as shared are transmitted to Cloud Firestore so your partner's device can display them, and vice versa. Non-shared expenses remain on your device only.</li>
+        <li>Each shared expense includes the amount, category, date, optional note, split type, and which partner paid. We do not transmit receipt photos to Firestore.</li>
+        <li>Either user can unpair at any time from Settings. Unpairing deletes the shared expense records from Firestore and removes any partner-originated expenses from your local device.</li>
+    </ul>
+
+    <p><strong>Firebase Authentication:</strong></p>
+    <ul>
+        <li>Google Sign-In (via Firebase Authentication) is used to identify you to the Drive Backup and Couple Mode features above. We receive your Google account ID and email address; we do not receive your Google password.</li>
+        <li>You only have a Firebase account if you use one of these optional features. You can delete this account at any time from <em>Settings &rarr; Delete account</em> (see section 6).</li>
+    </ul>
+
+    <h2>5. Data Export</h2>
+    <p>You can export your expense data as a CSV file or a monthly PDF report at any time through the Settings menu. The exported file is saved to a location you choose on your device.</p>
+
+    <h2>6. Account Deletion</h2>
+    <p>If you have used Couple Mode or Drive Backup, your Settings menu contains a <em>Delete account</em> option. Selecting it will, after a typed confirmation:</p>
+    <ul>
+        <li>Unpair you from any Couple Mode partner and remove shared expenses from Firestore.</li>
+        <li>Revoke the app's access to your Google Drive (existing backup files in your Drive remain under your control and can be deleted from Drive).</li>
+        <li>Delete your Firebase Authentication user record.</li>
+        <li>Wipe all local app data, including expenses, preferences, and any cached receipt photos.</li>
+    </ul>
+    <p>Uninstalling the app also removes local data, but does not on its own unpair you from Couple Mode or delete your Firebase Authentication record — use the in-app Delete account flow for that.</p>
+
+    <h2>7. Third-Party Services</h2>
+    <p>We use the following third-party services. Each service is governed by its own privacy policy.</p>
+    <ul>
+        <li><strong>Firebase Analytics</strong> &mdash; anonymous usage analytics</li>
+        <li><strong>Firebase Crashlytics</strong> &mdash; crash reporting</li>
+        <li><strong>Google AdMob</strong> &mdash; advertising (free version)</li>
+        <li><strong>Google User Messaging Platform (UMP)</strong> &mdash; GDPR / UK GDPR / Swiss FADP consent management</li>
+        <li><strong>Google Play Billing</strong> &mdash; in-app purchases</li>
+        <li><strong>Firebase Authentication</strong> &mdash; Google Sign-In for optional cloud features</li>
+        <li><strong>Cloud Firestore</strong> &mdash; storage of shared expenses for Couple Mode (only when enabled)</li>
+        <li><strong>Google Drive API</strong> &mdash; storage of your encrypted backups in your own Drive (only when enabled)</li>
+    </ul>
+
+    <h2>8. Your Rights (GDPR / UK GDPR)</h2>
+    <p>If you reside in the European Economic Area, the United Kingdom, or Switzerland, you have the right to access, correct, or delete personal data we process about you, and to object to or restrict its processing. Because most data stays on your device, you exercise most of these rights directly through the app (edit, delete, export, or use Delete account). For data held in Firebase or Drive, use the Delete account flow or contact us at the email below.</p>
+
+    <h2>9. Children's Privacy</h2>
     <p>SpendLog is not directed at children under the age of 13. We do not knowingly collect personal information from children.</p>
 
-    <h2>7. Changes to This Policy</h2>
-    <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new policy within the app.</p>
+    <h2>10. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. We will notify you of significant changes by posting the new policy within the app.</p>
 
-    <h2>8. Contact Us</h2>
+    <h2>11. Contact Us</h2>
     <p>If you have any questions about this Privacy Policy, please contact us at:</p>
     <p>Email: akerusan.dev@gmail.com</p>
 </body>
