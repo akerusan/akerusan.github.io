@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpendLog - Delete Your Account</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; line-height: 1.6; color: #333; }
+        h1 { color: #1a73e8; }
+        h2 { color: #444; margin-top: 2em; }
+        p { margin: 0.8em 0; }
+        .date { color: #666; font-style: italic; }
+        ol li { margin: 0.5em 0; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; font-size: 0.95em; }
+    </style>
+</head>
+<body>
+    <h1>Delete Your SpendLog Account</h1>
+    <p class="date">Last updated: May 20, 2026</p>
+
+    <p>SpendLog ("we", "our", or "the app") offers a built-in flow to permanently delete your account and all associated data. This page explains how to use it, what gets deleted, and how to contact us if you cannot access the app.</p>
+
+    <h2>1. When You Need to Delete Your Account</h2>
+    <p>You only have a SpendLog account if you have used one of the optional cloud features:</p>
+    <ul>
+        <li><strong>Couple Mode</strong> &mdash; pairs you with another user to share expenses via Cloud Firestore.</li>
+        <li><strong>Google Drive Backup</strong> &mdash; stores encrypted backups of your data in your own Google Drive.</li>
+    </ul>
+    <p>If you have never signed in with Google in either of these flows, you do not have an account to delete. Uninstalling the app removes all locally stored data.</p>
+
+    <h2>2. How to Delete Your Account from Inside the App</h2>
+    <ol>
+        <li>Open SpendLog on your Android device.</li>
+        <li>Tap the <strong>Settings</strong> tab in the bottom navigation.</li>
+        <li>Scroll to the <strong>Account</strong> section near the bottom (this section only appears if you have an account).</li>
+        <li>Tap <strong>Delete account</strong>.</li>
+        <li>In the confirmation dialog, type <code>DELETE</code> exactly to confirm.</li>
+        <li>Re-authenticate with your Google account when prompted (security requirement from Firebase Authentication).</li>
+        <li>The app will perform the deletion and return you to the onboarding screen.</li>
+    </ol>
+
+    <h2>3. What Gets Deleted</h2>
+    <p>The in-app deletion flow removes the following:</p>
+    <ul>
+        <li><strong>Your Firebase Authentication user record</strong> &mdash; permanently deleted from Google's servers.</li>
+        <li><strong>Couple Mode pairing and shared expenses</strong> &mdash; if you are paired, you are unpaired and all shared expenses you created are removed from Cloud Firestore.</li>
+        <li><strong>Google Drive backup files</strong> &mdash; SpendLog's encrypted backup files are deleted from your Drive's app-private folder. (Best-effort: if the request fails because Drive access has been revoked, the files remain in your Drive and can be deleted manually from your Drive's storage settings.)</li>
+        <li><strong>All local app data</strong> &mdash; expenses, categories, accounts, budgets, recurring entries, challenges, receipt photos, and all preferences. The app's local database and files directory are wiped.</li>
+    </ul>
+
+    <h2>4. What Is Kept and For How Long</h2>
+    <p>The following data may be retained briefly after deletion, as a result of standard service operations beyond our direct control:</p>
+    <ul>
+        <li><strong>Anonymous analytics events</strong> (Firebase Analytics) and <strong>crash diagnostics</strong> (Firebase Crashlytics) collected before deletion do not contain account identifiers and cannot be linked back to you. They are retained in aggregated form according to Firebase's default retention policies (typically up to 14 months for analytics events) and are then auto-purged.</li>
+        <li><strong>Server access logs and backups</strong> at Google (Firebase, Drive) may briefly retain redacted technical records for up to 60 days as part of Google's standard operations. We do not have access to these logs.</li>
+        <li><strong>Play Store purchase records</strong> for any premium subscription remain in your Google Play account history independently of the SpendLog app and are governed by Google Play's terms.</li>
+    </ul>
+    <p>No SpendLog-controlled records identifying you are kept after the deletion flow completes.</p>
+
+    <h2>5. If You Cannot Access the App</h2>
+    <p>If your device is lost, broken, or you have already uninstalled the app and cannot complete the in-app deletion flow, please email us at the address below and we will manually process the deletion. To verify your identity, the request must come from the Google account email address that was used to sign in to SpendLog.</p>
+    <p>Email: <a href="mailto:akerusan.dev@gmail.com">akerusan.dev@gmail.com</a></p>
+    <p>Please use the subject line: <strong>Delete my SpendLog account</strong></p>
+    <p>We will confirm and complete the deletion within 30 days of receiving a valid request.</p>
+
+    <h2>6. Privacy Policy</h2>
+    <p>For full details on what data we collect and how it is processed, see our <a href="privacy_policy.html">Privacy Policy</a>.</p>
+
+    <h2>7. Contact</h2>
+    <p>For any questions about account deletion or this page, contact us at <a href="mailto:akerusan.dev@gmail.com">akerusan.dev@gmail.com</a>.</p>
+</body>
+</html>
