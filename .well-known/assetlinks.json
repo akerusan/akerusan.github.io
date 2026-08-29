@@ -1,0 +1,10 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.akerusan.mmdb",
+      "sha256_cert_fingerprints": ["F2:4F:65:B5:89:4D:3B:C7:91:95:55:FD:E4:77:0D:0D:A6:6A:07:BD:6F:B6:82:DE:47:3B:93:7B:7D:3C:98:FA"]
+    }
+  }
+]

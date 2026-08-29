@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page not found</title>
+<!--
+  GitHub Pages serves this for every path with no file, which is every /mmdb/* share link
+  opened by someone without the app. Movie/tv/person links go to the matching TMDB page;
+  lists have no public web equivalent, so they go to the Play listing. Keep the paths in
+  lockstep with MmdbLinks.kt and nav_graph.xml.
+
+  This file sits at the root of akerusan.github.io, which also serves every other project
+  on the domain - so anything outside /mmdb/ goes to the site home, not to MMDb. A 404
+  under /medcalc/ is not an invitation to install a movie tracker.
+-->
+<script>
+(function () {
+  var PLAY = "https://play.google.com/store/apps/details?id=com.akerusan.mmdb";
+  var HOME = "https://akerusan.github.io/";
+  var path = location.pathname;
+  var tmdb = path.match(/^\/mmdb\/(movie|tv|person)\/(\d+)/);
+  if (tmdb) {
+    location.replace("https://www.themoviedb.org/" + tmdb[1] + "/" + tmdb[2]);
+  } else if (/^\/mmdb(\/|$)/.test(path)) {
+    location.replace(PLAY);
+  } else {
+    location.replace(HOME);
+  }
+})();
+</script>
+</head>
+<body>
+<noscript>
+  <h1>Page not found</h1>
+  <p><a href="https://akerusan.github.io/">Go to akerusan.github.io</a></p>
+  <p>Looking for a shared title? <a href="https://play.google.com/store/apps/details?id=com.akerusan.mmdb">Get MMDb on Google Play</a></p>
+</noscript>
+</body>
+</html>
